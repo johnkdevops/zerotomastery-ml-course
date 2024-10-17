@@ -1,0 +1,52 @@
+# Python
+*.py[cod] 
+__pycache__/
+*.so
+
+# Environment and dependencies
+env/
+venv/
+.env
+*.env
+*.ipynb_checkpoints
+Pipfile
+Pipfile.lock
+poetry.lock
+conda-env.yml
+*.conda
+*.pkl
+
+# Data files
+*.csv
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.xlsx
+*.xls
+*.json
+*.zip
+*.tar
+*.gz
+
+# Jupyter Notebook metadata
+.ipynb_checkpoints/
+
+# Logs
+*.log
+*.out
+*.txt
+
+# System files
+.DS_Store
+Thumbs.db
+*.bak
+
+# Model artifacts
+*.h5
+*.ckpt
+*.pb
+*.tflite
+*.onnx
+*.pkl
+*.joblib
