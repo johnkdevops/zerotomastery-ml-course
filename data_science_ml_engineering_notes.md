@@ -104,6 +104,7 @@ miniconda3
 conda /env
 
 cd "/c/ZeroToMastery/AI_ML_Engineer/ml-course/sample_project"
+cd "/c/ZeroToMastery/AI_ML_Engineer/ml-course/"
 
 echo "# zerotomastery-ml-course" >> README.md
 git init
