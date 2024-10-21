@@ -105,6 +105,14 @@ conda /env
 
 cd "/c/ZeroToMastery/AI_ML_Engineer/ml-course/sample_project"
 
+echo "# zerotomastery-ml-course" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/johnkdevops/zerotomastery-ml-course.git
+git push -u origin main
+
 ln -s "/c/ZeroToMastery/AI_ML_Engineer/DataScienceAndMLBootcamp/" ml-course
 
 
@@ -113,6 +121,8 @@ conda activate env/ && jupyter notebook
 jupyter notebook
 
 alias activate_sample='conda activate "/c/KodeKloud_Pro/Google Cloud/Google Cloud Platform Engineer/zerotomastery/AI ML Engineer/DataScienceAndMLBootcamp/sample_project/env"'
+
+Git Private Repo: /c/ZeroToMastery/AI_ML_Engineer/ml-course (main)
 
 conda env list
 
@@ -125,7 +135,35 @@ conda deactivate
 
 #Share your Conda Environment
 conda env export > environment.yml
-conda env create --prefix ./env --file -f ../sample-project/environment.yml
+conda env create --prefix ./env -f ../sample-project/environment.yml
+conda env create --prefix ./env pandas numpy matplotlib jupyter scikit-learn
+
+Dog Breed Project Data (Deep Learning Project)
+
+!wget https://www.dropbox.com/s/9kjr0ui9qbodfao/dog-breed-identification.zip # download files from Dropbox as zip
+
+import os
+import zipfile
+
+local_zip = 'dog-breed-identification.zip'
+zip_ref = zipfile.ZipFile(local_zip, 'r')
+
+zip_ref.extractall('Dog Vision') # unzip the files into a file called "Dog Vision"
+zip_ref.close()
+
+Bulldozers Project Data (Milestone Project 2)
+
+!wget https://github.com/mrdbourke/zero-to-mastery-ml/raw/master/data/bluebook-for-bulldozers.zip # download files from GitHub as zip
+
+import os
+import zipfile
+
+local_zip = 'bluebook-for-bulldozers.zip'
+zip_ref = zipfile.ZipFile(local_zip, 'r')
+
+zip_ref.extractall('.') # extract all data into current working directory
+zip_ref.close()
+
 
 ```
 
